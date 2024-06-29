@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">FanPage</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#content">Contenuti</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Benvenuti nella Fan Page Ufficiale di [Nome]</h1>
+            <p>Scopri contenuti esclusivi e resta aggiornato con le ultime novità!</p>
+            <a href="#content" class="cta-button">Scopri di più</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Chi Siamo</h2>
+            <p>Siamo un gruppo di appassionati dedicati a condividere i momenti migliori di [Nome]. Unisciti a noi per vivere un'esperienza unica!</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="content">
+        <div class="container">
+            <h2>Contenuti</h2>
+            <div class="gallery">
+                <div class="gallery-item"> <img src="image1.jpg" alt="Contenuto 1"></div>
+                <div class="gallery-item"> <img src="image2.jpg" alt="Contenuto 2"></div>
+                <div class="gallery-item"> <img src="image3.jpg" alt="Contenuto 3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contatti</h2>
+            <p>Per qualsiasi informazione, non esitare a contattarci!</p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Messaggio"></textarea>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FanPage. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>
