@@ -3,141 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        header {
-            background-color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .logo img {
-            width: 80px; /* Modifica la dimensione del logo */
-            height: auto;
-        }
-        nav {
-            background-color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #ec1c89; /* Colore dei titoli */
-            font-size: 24px; /* Dimensione dei titoli */
-            transition: color 0.3s ease; /* Aggiungi una transizione per il cambio di colore */
-        }
-        nav ul li a:hover {
-            color: #333; /* Cambia il colore al passaggio del mouse */
-        }
-        .cart-icon {
-            margin-left: 20px;
-            font-size: 24px;
-            color: #ec1c89;
-        }
-        section {
-            padding: 50px 0;
-            text-align: center;
-        }
-        h2 {
-            color: #ec1c89;
-        }
-        .content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .content div {
-            width: 30%;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+    <title>Fanpage Simile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+        <div class="container">
+            <div class="logo">
+                <h1>Fanpage Simile</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Cultura</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Contatti</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#esperienze">Esperienze</a></li>
-            <li><a href="#come-funziona">Come Funziona</a></li>
-            <li><a href="#contattaci">Contattaci</a></li>
-            <li><a href="#prenota-viaggio">Prenota un Viaggio</a><i class="fas fa-shopping-cart cart-icon"></i></li>
-        </ul>
-    </nav>
-    <section id="esperienze">
-        <h2>Esperienze</h2>
-        <div class="content">
-            <div>
-                <img src="image1.jpg" alt="Immagine 1">
-                <p><strong>Recensione di Maria:</strong> "Fantastica esperienza! Il viaggio è stato organizzato alla perfezione e ho potuto godere di paesaggi mozzafiato."</p>
-            </div>
-            <div>
-                <img src="image2.jpg" alt="Immagine 2">
-                <p><strong>Recensione di Luca:</strong> "Non potevo chiedere di meglio! L'esperienza è stata incredibile e ho incontrato persone fantastiche durante il viaggio."</p>
-            </div>
-            <div>
-                <img src="image3.jpg" alt="Immagine 3">
-                <p><strong>Recensione di Andrea:</strong> "Indimenticabile! Ho vissuto momenti unici durante questo viaggio e lo consiglio a tutti gli amanti dell'avventura."</p>
-            </div>
+    <main>
+        <div class="container">
+            <section class="main-news">
+                <article>
+                    <img src="https://via.placeholder.com/800x400" alt="News Image">
+                    <h2>Titolo della Notizia Principale</h2>
+                    <p>Questo è un esempio di descrizione per la notizia principale. È solo un testo di esempio per mostrare come potrebbe apparire il contenuto.</p>
+                </article>
+            </section>
+            <section class="other-news">
+                <article>
+                    <img src="https://via.placeholder.com/400x200" alt="News Image">
+                    <h3>Titolo della Notizia Secondaria</h3>
+                    <p>Descrizione breve della notizia secondaria.</p>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/400x200" alt="News Image">
+                    <h3>Titolo della Notizia Secondaria</h3>
+                    <p>Descrizione breve della notizia secondaria.</p>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/400x200" alt="News Image">
+                    <h3>Titolo della Notizia Secondaria</h3>
+                    <p>Descrizione breve della notizia secondaria.</p>
+                </article>
+            </section>
         </div>
-    </section>
-    <section id="come-funziona">
-        <h2>Come Funziona</h2>
-        <div class="content">
-            <div>
-                <img src="image4.jpg" alt="Immagine 4">
-                <p>Descrizione Immagine 4</p>
-            </div>
-            <div>
-                <img src="image5.jpg" alt="Immagine 5">
-                <p>Descrizione Immagine 5</p>
-            </div>
-            <div>
-                <img src="image6.jpg" alt="Immagine 6">
-                <p>Descrizione Immagine 6</p>
-            </div>
-        </div>
-    </section>
-    <section id="contattaci">
-        <h2>Contattaci</h2>
-        <p>Contatta il nostro team per ulteriori informazioni.</p>
-    </section>
-    <section id="prenota-viaggio">
-        <div style="background-color: #fff; padding: 50px 0;">
-            <h2>Prenota un Viaggio</h2>
-            <p>Pianifica la tua prossima avventura con noi.</p>
-        </div>
-    </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Agenzia di Viaggi. Tutti i diritti riservati.</p>
+        <div class="container">
+            <p>&copy; 2024 Fanpage Simile. Tutti i diritti riservati.</p>
+        </div>
     </footer>
 </body>
 </html>
+
