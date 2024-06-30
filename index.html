@@ -3,54 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIGHTS4U</title>
+    <title>Portfolio Simile a Behance</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Link to Swiper's CSS -->
+    <!-- Link to Swiper's CSS for the carousel -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
-        <div class="container header-container">
-            <div class="text-section">
-                <h1>RIGHTS4U</h1>
-                <p>Benvenuti su RIGHTS4U, il vostro partner di fiducia per la gestione dei diritti e delle licenze.</p>
-            </div>
-            <div class="logo-section">
+        <div class="container">
+            <div class="logo">
                 <img src="https://via.placeholder.com/150x50" alt="Logo RIGHTS4U">
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Scopri</a></li>
+                    <li><a href="#">Progetti</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Lavoro</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li><a href="#">Iscriviti</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Scopri i migliori progetti creativi</h1>
+                <p>Unisciti a RIGHTS4U per esplorare, condividere e ispirare il mondo con il tuo lavoro creativo.</p>
+                <a href="#" class="cta-button">Inizia ora</a>
+            </div>
+        </section>
         <section class="portfolio">
-            <h2>Il Nostro Portfolio</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 1">
-                        <p>Progetto 1</p>
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                            <p>Progetto 1</p>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                            <p>Progetto 2</p>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                            <p>Progetto 3</p>
+                        </div>
+                        <!-- Add more slides as needed -->
                     </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 2">
-                        <p>Progetto 2</p>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 3">
-                        <p>Progetto 3</p>
-                    </div>
-                    <!-- Add more slides as needed -->
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
         </section>
     </main>
-    <!-- Swiper's JS -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RIGHTS4U. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+    <!-- Swiper's JS for the carousel -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper-container', {
@@ -67,3 +87,4 @@
     </script>
 </body>
 </html>
+
