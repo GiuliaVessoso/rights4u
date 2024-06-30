@@ -3,60 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fanpage Simile</title>
+    <title>RIGHTS4U</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Fanpage Simile</h1>
+        <div class="container header-container">
+            <div class="text-section">
+                <h1>RIGHTS4U</h1>
+                <p>Benvenuti su RIGHTS4U, il vostro partner di fiducia per la gestione dei diritti e delle licenze.</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Sport</a></li>
-                    <li><a href="#">Cultura</a></li>
-                    <li><a href="#">Tech</a></li>
-                    <li><a href="#">Contatti</a></li>
-                </ul>
-            </nav>
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/150x50" alt="Logo RIGHTS4U">
+            </div>
         </div>
     </header>
     <main>
-        <div class="container">
-            <section class="main-news">
-                <article>
-                    <img src="https://via.placeholder.com/800x400" alt="News Image">
-                    <h2>Titolo della Notizia Principale</h2>
-                    <p>Questo è un esempio di descrizione per la notizia principale. È solo un testo di esempio per mostrare come potrebbe apparire il contenuto.</p>
-                </article>
-            </section>
-            <section class="other-news">
-                <article>
-                    <img src="https://via.placeholder.com/400x200" alt="News Image">
-                    <h3>Titolo della Notizia Secondaria</h3>
-                    <p>Descrizione breve della notizia secondaria.</p>
-                </article>
-                <article>
-                    <img src="https://via.placeholder.com/400x200" alt="News Image">
-                    <h3>Titolo della Notizia Secondaria</h3>
-                    <p>Descrizione breve della notizia secondaria.</p>
-                </article>
-                <article>
-                    <img src="https://via.placeholder.com/400x200" alt="News Image">
-                    <h3>Titolo della Notizia Secondaria</h3>
-                    <p>Descrizione breve della notizia secondaria.</p>
-                </article>
-            </section>
-        </div>
+        <section class="portfolio">
+            <h2>Il Nostro Portfolio</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                        <p>Progetto 1</p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                        <p>Progetto 2</p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                        <p>Progetto 3</p>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Fanpage Simile. Tutti i diritti riservati.</p>
-        </div>
-    </footer>
+    <!-- Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
-
