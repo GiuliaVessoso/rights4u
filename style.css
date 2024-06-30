@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -11,85 +10,71 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header .logo {
-    float: left;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-main {
-    margin-top: 20px;
-}
-
-.main-news img {
-    width: 100%;
-}
-
-.main-news h2 {
-    color: #333;
-    margin-top: 10px;
-}
-
-.other-news {
+.header-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-}
-
-.other-news article {
+    align-items: center;
+    padding: 20px;
     background: #fff;
-    padding: 10px;
-    border: 1px solid #ddd;
-    width: 30%;
+    border-bottom: 2px solid #ddd;
 }
 
-.other-news img {
-    width: 100%;
+.text-section {
+    flex: 1;
 }
 
-.other-news h3 {
+.logo-section {
+    flex: 0 0 150px;
+}
+
+header h1 {
+    color: #d7126a;
+    font-size: 2em;
+}
+
+header p {
     color: #333;
     margin-top: 10px;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+.portfolio {
+    margin: 20px auto;
+    width: 80%;
 }
+
+.portfolio h2 {
+    color: #d7126a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide p {
+    margin-top: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    background: #d7126a !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #d7126a;
+}
+
